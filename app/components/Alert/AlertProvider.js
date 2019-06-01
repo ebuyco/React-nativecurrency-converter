@@ -17,6 +17,7 @@ class AlertProvider extends Component {
     };
   }
 
+
   getChildContext() {
     return {
       alert: (...args) => this.dropdown.alert(...args),
@@ -24,6 +25,7 @@ class AlertProvider extends Component {
     };
   }
 
+  
   render() {
     const { children } = this.props;
     return (
