@@ -11,8 +11,10 @@ if (process.env.NODE_ENV === 'development') {
   middleware.push(logger);
 }
 
+
 const store = createStore(reducer, applyMiddleware(...middleware));
 
 sagaMiddleware.run(rootSaga);
+
 
 export default store;

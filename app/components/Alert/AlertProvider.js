@@ -24,7 +24,6 @@ class AlertProvider extends Component {
       alertWithType: (...args) => this.dropdown.alertWithType(...args),
     };
   }
-
   
   render() {
     const { children } = this.props;
