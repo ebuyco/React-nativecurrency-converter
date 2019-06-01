@@ -27,6 +27,7 @@ class AlertProvider extends Component {
   
   render() {
     const { children } = this.props;
+
     return (
       <View style={{ flex: 1 }}>
         {React.Children.only(children)}
@@ -37,6 +38,7 @@ class AlertProvider extends Component {
         />
       </View>
     );
+    
   }
 }
 
